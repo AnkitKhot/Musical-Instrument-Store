@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+
+
+
+
+
+
+
+
+
+
+
+
+/* Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
+
+/* Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { }
+
+/* Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+/* Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
+
+/* No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }
+@include media-breakpoint-only(xs) { ... }
+@include media-breakpoint-only(sm) { ... }
+@include media-breakpoint-only(md) { ... }
+@include media-breakpoint-only(lg) { ... }
+@include media-breakpoint-only(xl) { ... }
+
+/* Example: Hide starting at `min-width: 0`, and then show at the `sm` breakpoint--*/
+
+
+
+
+.custom-class {
+  display: none;
+}
+@include media-breakpoint-up(sm) {
+  .custom-class {
+    display: block;
+  }
+}
+
+.body-bg{
+	background-image: url('images/musical-background-2842924_1920.jpg');
+}
+
+.btn{
+  solid:#eee;
+}
+.nav{
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.left-bar{
+  padding-left: 80px;
+}
+
+.category{
+  padding-left: 20px;
+}
+
+.Epparels-content{
+  padding-top: 50px;
+}
+
+.header-container{
+  padding-bottom: 5px;
+}
+
+/* index */
+
+.body-padding{
+  padding-left: 25%;
+}
+
+
+.img-responsive {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    -webkit-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    margin-bottom:20px;
+    width: 500px;
+    height: 350px;
+
+}
+
+.img-responsive:hover {
+  filter: none; /* IE6-9 */
+  -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+ 
+}
+
+
+/* Login form*/
+
+.login-form{
+  padding-left: 25%;
+  
+}
+
+.register-form{
+  padding-left: 25%;
+
+}
+
+/*cart*/
+.table>tbody>tr>td, .table>tfoot>tr>td{
+    vertical-align: middle;
+}
+@media screen and (max-width: 600px) {
+    table#cart tbody td .form-control{
+    width:20%;
+    display: inline !important;
+  }
+  
+  
+  table#cart tfoot td{display:block; }
+  table#cart tfoot td .btn{display:block;}
+}
+
+
+
+
+/*---Firefox Bug Fix */
+
+.carousel-item {
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  height: 600px;
+}
+
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* content */
+.card-product:after {
+    content: "";
+    display: table;
+    clear: both;
+    visibility: hidden; }
+  .card-product .price-new, .card-product .price {
+    margin-right: 5px; }
+  .card-product .price-old {
+    color: #999; }
+  .card-product .img-wrap {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+    text-align: center; }
+    .card-product .img-wrap img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: cover; }
+      
+      .card-product .info-wrap {
+    overflow: hidden;
+    padding: 15px;
+    border-top: 1px solid #eee; }
+  .card-product .action-wrap {
+    padding-top: 4px;
+    margin-top: 4px; }
+  .card-product .bottom-wrap {
+    padding: 15px;
+    border-top: 1px solid #eee; }
+  .card-product .title {
+    margin-top: 0; }
+
+ 
+/*footer*/
+
+.footer-container{
+  padding-top: 30px;
+}
+.contact span {
+   color: #000; 
+   font-weight: 800; 
+   display: block;
+   text-transform: uppercase;
+   font-size: 16px;
+   letter-spacing: 2px;
+}
+
+.contact li {
+    list-style: none;
+}
+
+.contact li a {
+    color:#000;
+    text-decoration:none;
+    font-size:14px;
+}
+
+
+/* checkout */
+.row-checkout {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container-checkout {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn-check {
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+/* b.php*/
+ .img-big-wrap img {
+    
+     max-height: 100%;
+      max-width: 100%;
+      object-fit: cover;
+}
+/*
+
+.gallery-wrap .img-small-wrap .item-gallery {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ddd;
+    margin: 7px 2px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.gallery-wrap .img-small-wrap {
+    text-align: center;
+}
+.gallery-wrap .img-small-wrap img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: zoom-in;
+}
+
+
+/*--- Fixed Background Image --*/
+/*figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+
+
+/*.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix 
+[class*="col-"] {
+    padding: 1rem;
+}
+--*/
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+
+
+
+
+/* body{
+	margin: 0;
+}
+
+header{
+	background: black;
+	color: white;
+	
+}
+
+ul{
+	list-style-type: name;
+	margin: 0;
+	padding:0;
+	font-family: sans-serif;
+	background: #000;
+}
+
+ul::after{
+	content: '';
+	clear: both;
+	display: block;
+}
+
+nav>ul>li{
+	float: right;
+	position: relative;
+}
+
+a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	text-decoration: none;
+}--*/
+
+
+
+/*
+.dropdown-men {
+	display: none;
+	position: absolute;
+	
+}
+
+.dropdown-women {
+	display: none;
+	position: absolute;
+	min-width: 250px;
+	background: #495e5a;
+}
+
+.dropdown:hover .dropdown-women{
+	display: block;
+}
+
+.dropdown:hover .dropdown-men {
+	display: block;
+}
+
+.dropdown content a:hover{
+	background: #323214;
+}--*/
