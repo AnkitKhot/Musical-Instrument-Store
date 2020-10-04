@@ -1,1 +1,1 @@
-# Musical-Instrument-Store/CSS,HTML,Javascript,PHP,MYSQL.
+# Musical-Instruments-Store/CSS,HTML,Javascript,PHP,MYSQL.
